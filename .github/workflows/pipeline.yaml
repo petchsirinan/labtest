@@ -47,7 +47,8 @@ jobs:
               echo deploy success
           fi
   test: 
-    runs-on: self-hosted  
+    runs-on: self-hosted 
+    needs: build
     steps:   
       - name: test app
         run: curl http://localhost:8080
