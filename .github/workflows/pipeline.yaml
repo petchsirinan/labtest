@@ -46,5 +46,6 @@ jobs:
           eles
               echo deploy success
           fi
+          sleep 60
       - name: test app
         run: curl http://localhost:8080
