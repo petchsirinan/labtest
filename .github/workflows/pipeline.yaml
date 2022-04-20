@@ -47,4 +47,4 @@ jobs:
               echo deploy success
           fi
       - name: test app
-        run: curl localhost:8080
+        run: curl http://localhost:8080
